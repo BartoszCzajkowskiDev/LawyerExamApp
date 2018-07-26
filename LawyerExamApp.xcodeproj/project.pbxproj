@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687581C210A54FC00324ECF /* AppDelegate.swift */; };
-		7687581F210A54FC00324ECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687581E210A54FC00324ECF /* ViewController.swift */; };
 		76875822210A54FC00324ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76875820210A54FC00324ECF /* Main.storyboard */; };
 		76875825210A54FC00324ECF /* LawyerExamApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76875823210A54FC00324ECF /* LawyerExamApp.xcdatamodeld */; };
 		76875827210A54FD00324ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76875826210A54FD00324ECF /* Assets.xcassets */; };
 		7687582A210A54FD00324ECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76875828210A54FD00324ECF /* LaunchScreen.storyboard */; };
 		76875835210A54FD00324ECF /* LawyerExamAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875834210A54FD00324ECF /* LawyerExamAppTests.swift */; };
 		76875840210A54FD00324ECF /* LawyerExamAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687583F210A54FD00324ECF /* LawyerExamAppUITests.swift */; };
+		7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585A210A5C2F00324ECF /* LoginViewController.swift */; };
+		7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585D210A651F00324ECF /* PublicProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,6 @@
 /* Begin PBXFileReference section */
 		76875819210A54FC00324ECF /* LawyerExamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawyerExamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7687581C210A54FC00324ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7687581E210A54FC00324ECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76875821210A54FC00324ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76875824210A54FC00324ECF /* LawyerExamApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LawyerExamApp.xcdatamodel; sourceTree = "<group>"; };
 		76875826210A54FD00324ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		7687583B210A54FD00324ECF /* LawyerExamAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LawyerExamAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7687583F210A54FD00324ECF /* LawyerExamAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerExamAppUITests.swift; sourceTree = "<group>"; };
 		76875841210A54FD00324ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7687585A210A5C2F00324ECF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7687585D210A651F00324ECF /* PublicProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +108,7 @@
 				76875857210A594D00324ECF /* Resources */,
 				76875858210A595D00324ECF /* Extensions */,
 				7687581C210A54FC00324ECF /* AppDelegate.swift */,
-				7687581E210A54FC00324ECF /* ViewController.swift */,
-				76875820210A54FC00324ECF /* Main.storyboard */,
 				76875826210A54FD00324ECF /* Assets.xcassets */,
-				76875828210A54FD00324ECF /* LaunchScreen.storyboard */,
 				7687582B210A54FD00324ECF /* Info.plist */,
 				76875823210A54FC00324ECF /* LawyerExamApp.xcdatamodeld */,
 			);
@@ -165,6 +164,9 @@
 		76875850210A584000324ECF /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				76875828210A54FD00324ECF /* LaunchScreen.storyboard */,
+				76875820210A54FC00324ECF /* Main.storyboard */,
+				7687585A210A5C2F00324ECF /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -228,8 +230,17 @@
 		76875859210A598F00324ECF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				7687585C210A64F400324ECF /* PublicProtocols */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		7687585C210A64F400324ECF /* PublicProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				7687585D210A651F00324ECF /* PublicProtocols.swift */,
+			);
+			path = PublicProtocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,7 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7687581F210A54FC00324ECF /* ViewController.swift in Sources */,
+				7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */,
+				7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */,
 				7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */,
 				76875825210A54FC00324ECF /* LawyerExamApp.xcdatamodeld in Sources */,
 			);
