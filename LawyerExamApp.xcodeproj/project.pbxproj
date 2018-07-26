@@ -99,6 +99,12 @@
 		7687581B210A54FC00324ECF /* LawyerExamApp */ = {
 			isa = PBXGroup;
 			children = (
+				7687584E210A582E00324ECF /* Database */,
+				76875859210A598F00324ECF /* Utils */,
+				7687584D210A581D00324ECF /* Manager */,
+				7687584F210A583B00324ECF /* UI */,
+				76875857210A594D00324ECF /* Resources */,
+				76875858210A595D00324ECF /* Extensions */,
 				7687581C210A54FC00324ECF /* AppDelegate.swift */,
 				7687581E210A54FC00324ECF /* ViewController.swift */,
 				76875820210A54FC00324ECF /* Main.storyboard */,
@@ -126,6 +132,104 @@
 				76875841210A54FD00324ECF /* Info.plist */,
 			);
 			path = LawyerExamAppUITests;
+			sourceTree = "<group>";
+		};
+		7687584D210A581D00324ECF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				76875856210A593D00324ECF /* ApiManager */,
+				76875855210A593500324ECF /* Parsers */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		7687584E210A582E00324ECF /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		7687584F210A583B00324ECF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				76875854210A587100324ECF /* AddQuestion */,
+				76875853210A586A00324ECF /* Settings */,
+				76875852210A585700324ECF /* Statistics */,
+				76875851210A584900324ECF /* Quiz */,
+				76875850210A584000324ECF /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		76875850210A584000324ECF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		76875851210A584900324ECF /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		76875852210A585700324ECF /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		76875853210A586A00324ECF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		76875854210A587100324ECF /* AddQuestion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddQuestion;
+			sourceTree = "<group>";
+		};
+		76875855210A593500324ECF /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		76875856210A593D00324ECF /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		76875857210A594D00324ECF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		76875858210A595D00324ECF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		76875859210A598F00324ECF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
