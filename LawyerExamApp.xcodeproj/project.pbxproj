@@ -16,6 +16,8 @@
 		76875840210A54FD00324ECF /* LawyerExamAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687583F210A54FD00324ECF /* LawyerExamAppUITests.swift */; };
 		7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585A210A5C2F00324ECF /* LoginViewController.swift */; };
 		7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585D210A651F00324ECF /* PublicProtocols.swift */; };
+		76875860210A689B00324ECF /* EulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585F210A689B00324ECF /* EulaViewController.swift */; };
+		76875862210A68F800324ECF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875861210A68F800324ECF /* SplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		76875841210A54FD00324ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7687585A210A5C2F00324ECF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7687585D210A651F00324ECF /* PublicProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProtocols.swift; sourceTree = "<group>"; };
+		7687585F210A689B00324ECF /* EulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulaViewController.swift; sourceTree = "<group>"; };
+		76875861210A68F800324ECF /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 				76875828210A54FD00324ECF /* LaunchScreen.storyboard */,
 				76875820210A54FC00324ECF /* Main.storyboard */,
 				7687585A210A5C2F00324ECF /* LoginViewController.swift */,
+				7687585F210A689B00324ECF /* EulaViewController.swift */,
+				76875861210A68F800324ECF /* SplashViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -376,6 +382,8 @@
 			files = (
 				7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */,
 				7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */,
+				76875860210A689B00324ECF /* EulaViewController.swift in Sources */,
+				76875862210A68F800324ECF /* SplashViewController.swift in Sources */,
 				7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */,
 				76875825210A54FC00324ECF /* LawyerExamApp.xcdatamodeld in Sources */,
 			);

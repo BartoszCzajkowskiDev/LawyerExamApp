@@ -28,6 +28,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+    }
 
 }
 
