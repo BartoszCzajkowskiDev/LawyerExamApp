@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7639923B210B7CE700C4042F /* HockeySDKResources.bundle */; };
+		7639923E210B7CE700C4042F /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7639923C210B7CE700C4042F /* HockeySDK.framework */; };
 		7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687581C210A54FC00324ECF /* AppDelegate.swift */; };
 		76875822210A54FC00324ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76875820210A54FC00324ECF /* Main.storyboard */; };
 		76875825210A54FC00324ECF /* LawyerExamApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76875823210A54FC00324ECF /* LawyerExamApp.xcdatamodeld */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7639923B210B7CE700C4042F /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
+		7639923C210B7CE700C4042F /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		76875819210A54FC00324ECF /* LawyerExamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawyerExamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7687581C210A54FC00324ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76875821210A54FC00324ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7639923E210B7CE700C4042F /* HockeySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7639923A210B7CE700C4042F /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				7639923B210B7CE700C4042F /* HockeySDKResources.bundle */,
+				7639923C210B7CE700C4042F /* HockeySDK.framework */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
 		76875810210A54FC00324ECF = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +104,7 @@
 				76875833210A54FD00324ECF /* LawyerExamAppTests */,
 				7687583E210A54FD00324ECF /* LawyerExamAppUITests */,
 				7687581A210A54FC00324ECF /* Products */,
+				7639923A210B7CE700C4042F /* HockeySDK.embeddedframework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,6 +275,7 @@
 				76875815210A54FC00324ECF /* Sources */,
 				76875816210A54FC00324ECF /* Frameworks */,
 				76875817210A54FC00324ECF /* Resources */,
+				76399239210B7CA500C4042F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -354,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7687582A210A54FD00324ECF /* LaunchScreen.storyboard in Resources */,
+				7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */,
 				76875827210A54FD00324ECF /* Assets.xcassets in Resources */,
 				76875822210A54FC00324ECF /* Main.storyboard in Resources */,
 			);
@@ -374,6 +392,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76399239210B7CA500C4042F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n\"$FILE\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		76875815210A54FC00324ECF /* Sources */ = {
@@ -560,6 +594,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7YY48MWP5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = LawyerExamApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -578,6 +616,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7YY48MWP5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
+				);
 				INFOPLIST_FILE = LawyerExamApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
