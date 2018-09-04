@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760ECECC213EE910005B97E7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECECB213EE910005B97E7 /* SignInViewController.swift */; };
+		760ECECE213EE956005B97E7 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760ECECD213EE956005B97E7 /* Quiz.storyboard */; };
 		7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7639923B210B7CE700C4042F /* HockeySDKResources.bundle */; };
 		7639923E210B7CE700C4042F /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7639923C210B7CE700C4042F /* HockeySDK.framework */; };
 		7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687581C210A54FC00324ECF /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		760ECECB213EE910005B97E7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		760ECECD213EE956005B97E7 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		7639923B210B7CE700C4042F /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		7639923C210B7CE700C4042F /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		76875819210A54FC00324ECF /* LawyerExamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawyerExamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,9 +101,17 @@
 			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
 			sourceTree = "<group>";
 		};
+		7639923F210B803700C4042F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		76875810210A54FC00324ECF = {
 			isa = PBXGroup;
 			children = (
+				7639923F210B803700C4042F /* Framework */,
 				7687581B210A54FC00324ECF /* LawyerExamApp */,
 				76875833210A54FD00324ECF /* LawyerExamAppTests */,
 				7687583E210A54FD00324ECF /* LawyerExamAppUITests */,
@@ -189,6 +201,7 @@
 				7687585A210A5C2F00324ECF /* LoginViewController.swift */,
 				7687585F210A689B00324ECF /* EulaViewController.swift */,
 				76875861210A68F800324ECF /* SplashViewController.swift */,
+				760ECECB213EE910005B97E7 /* SignInViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -196,6 +209,7 @@
 		76875851210A584900324ECF /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				760ECECD213EE956005B97E7 /* Quiz.storyboard */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -372,6 +386,7 @@
 			files = (
 				7687582A210A54FD00324ECF /* LaunchScreen.storyboard in Resources */,
 				7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */,
+				760ECECE213EE956005B97E7 /* Quiz.storyboard in Resources */,
 				76875827210A54FD00324ECF /* Assets.xcassets in Resources */,
 				76875822210A54FC00324ECF /* Main.storyboard in Resources */,
 			);
@@ -414,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				760ECECC213EE910005B97E7 /* SignInViewController.swift in Sources */,
 				7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */,
 				7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */,
 				76875860210A689B00324ECF /* EulaViewController.swift in Sources */,
