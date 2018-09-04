@@ -32,7 +32,8 @@
 		76875862210A68F800324ECF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875861210A68F800324ECF /* SplashViewController.swift */; };
 		76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */; };
 		76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */; };
-		76DBC8A3213F2E2600C9EEE7 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A2213F2E2600C9EEE7 /* Keychain.swift */; };
+		76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A4213F335900C9EEE7 /* Extensions.swift */; };
+		76DBC8A7213F343000C9EEE7 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */; };
 		8AA3890AD38205AC552826EC /* Pods_LawyerExamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CCC6AD6A64186A2669CAB5 /* Pods_LawyerExamApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,7 +89,8 @@
 		76875861210A68F800324ECF /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswerSound.mp3; sourceTree = "<group>"; };
-		76DBC8A2213F2E2600C9EEE7 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		76DBC8A4213F335900C9EEE7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
 		D4D42CD5F44AAFC7B4E83276 /* Pods-LawyerExamAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawyerExamAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LawyerExamAppTests/Pods-LawyerExamAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E514EE0F84655AEBDEC70CA6 /* Pods_LawyerExamAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LawyerExamAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E898AAA81A1B825A00341FD4 /* Pods-LawyerExamAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawyerExamAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LawyerExamAppTests/Pods-LawyerExamAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 		76875858210A595D00324ECF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				76DBC8A4213F335900C9EEE7 /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -338,18 +341,10 @@
 		76875859210A598F00324ECF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				7687585C210A64F400324ECF /* PublicProtocols */,
+				7687585D210A651F00324ECF /* PublicProtocols.swift */,
+				76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		7687585C210A64F400324ECF /* PublicProtocols */ = {
-			isa = PBXGroup;
-			children = (
-				7687585D210A651F00324ECF /* PublicProtocols.swift */,
-				76DBC8A2213F2E2600C9EEE7 /* Keychain.swift */,
-			);
-			path = PublicProtocols;
 			sourceTree = "<group>";
 		};
 		76DBC89C213F223600C9EEE7 /* Audio */ = {
@@ -519,15 +514,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LawyerExamApp-checkManifestLockResult.txt",
 			);
@@ -541,15 +532,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LawyerExamAppUITests-checkManifestLockResult.txt",
 			);
@@ -576,15 +563,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LawyerExamAppTests-checkManifestLockResult.txt",
 			);
@@ -598,15 +581,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LawyerExamApp/Pods-LawyerExamApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
 			);
@@ -629,13 +608,14 @@
 				760ECEDC213F1C64005B97E7 /* Parser.swift in Sources */,
 				76875860210A689B00324ECF /* EulaViewController.swift in Sources */,
 				760ECED1213EECF4005B97E7 /* MainQuizViewController.swift in Sources */,
+				76DBC8A7213F343000C9EEE7 /* KeychainManager.swift in Sources */,
 				760ECEDA213F1BD1005B97E7 /* Database.swift in Sources */,
 				760ECED3213EF918005B97E7 /* QuestionsViewController.swift in Sources */,
 				76875862210A68F800324ECF /* SplashViewController.swift in Sources */,
+				76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */,
 				7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */,
 				760ECED8213F18BB005B97E7 /* Question.swift in Sources */,
 				76875825210A54FC00324ECF /* LawyerExamApp.xcdatamodeld in Sources */,
-				76DBC8A3213F2E2600C9EEE7 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

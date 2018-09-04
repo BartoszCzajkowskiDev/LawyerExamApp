@@ -1,5 +1,5 @@
 //
-//  Keychain.swift
+//  Extensions.swift
 //  LawyerExamApp
 //
 //  Created by Bartosz Czajkowski on 04/09/2018.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Keychain{
+class Extensions{
     
 }
