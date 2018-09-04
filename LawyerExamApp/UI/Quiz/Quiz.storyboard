@@ -13,7 +13,7 @@
         <!--Main Quiz View Controller-->
         <scene sceneID="PTq-d8-2hQ">
             <objects>
-                <viewController id="sAE-yS-aZ5" customClass="MainQuizViewController" customModule="LawyerExamApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainQuizViewController" id="sAE-yS-aZ5" customClass="MainQuizViewController" customModule="LawyerExamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eHD-ar-5c3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

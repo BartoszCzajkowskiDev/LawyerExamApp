@@ -24,13 +24,17 @@ class QuestionsViewController: UIViewController {
     
     var parser = Parser()
     var player = AVAudioPlayer()
+    var database = Database()
+    var questionsFromDatabase = [Question]()
+    var numberOfCurrentQuestion = 0
+    var randomQuestion = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        
+        questionsFromDatabase = database.retrieveQuestionsFromDatabase()
     }
+    
+
     
     func playCorrectAnswerSong() {
         do {

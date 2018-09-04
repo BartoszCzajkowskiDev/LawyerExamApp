@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class LoginViewController: UIViewController {
     
 
@@ -23,15 +21,36 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signInLabel: UILabel!
     
+    var loggedInStatus: Bool = true
+    
+
+    @IBAction func loginButtonAction(_ sender: Any) {
+        if loggedInStatus {
+            passToMainQuizViewController()
+        }else{
+            return
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
+    func passToMainQuizViewController(){
+        let storyboard = UIStoryboard(name: "Quiz", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "MainQuizViewController")
+        self.present(controller, animated: true, completion: nil)
     }
+    
+    func userLoggedIn(loggedInStatus: Bool){
+        self.loggedInStatus = loggedInStatus
+    }
+    func userLoggedOut(loggedInStatus: Bool){
+        self.loggedInStatus = loggedInStatus
+    }
+
     
 
 }
