@@ -179,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In View Controller-->
         <scene sceneID="ugY-2X-Q3j">
             <objects>
-                <viewController id="Unv-MS-HjU" sceneMemberID="viewController">
+                <viewController id="Unv-MS-HjU" customClass="SignInViewController" customModule="LawyerExamApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0U-zP-922">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,6 +283,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yar-wO-diX"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="2Lu-TN-1Uh" id="EFm-0h-1q8"/>
+                        <outlet property="firstNameTextField" destination="mT9-nN-aIk" id="WVJ-ps-DC0"/>
+                        <outlet property="nameTextField" destination="NOl-Iq-EYu" id="GaL-YQ-9rk"/>
+                        <outlet property="passwordTextField" destination="2dU-Ci-6uo" id="Mqi-gC-hCY"/>
+                        <outlet property="repeatPasswordTextField" destination="ooF-Az-dcH" id="pBb-yG-WmY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m6t-ta-jLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

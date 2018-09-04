@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		760ECECC213EE910005B97E7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECECB213EE910005B97E7 /* SignInViewController.swift */; };
 		760ECECE213EE956005B97E7 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760ECECD213EE956005B97E7 /* Quiz.storyboard */; };
+		760ECED1213EECF4005B97E7 /* MainQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED0213EECF4005B97E7 /* MainQuizViewController.swift */; };
+		760ECED3213EF918005B97E7 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED2213EF918005B97E7 /* QuestionsViewController.swift */; };
+		760ECED5213EF942005B97E7 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED4213EF942005B97E7 /* CategoryViewController.swift */; };
+		760ECED8213F18BB005B97E7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED7213F18BB005B97E7 /* Question.swift */; };
+		760ECEDA213F1BD1005B97E7 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED9213F1BD1005B97E7 /* Database.swift */; };
+		760ECEDC213F1C64005B97E7 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECEDB213F1C64005B97E7 /* Parser.swift */; };
 		7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7639923B210B7CE700C4042F /* HockeySDKResources.bundle */; };
 		7639923E210B7CE700C4042F /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7639923C210B7CE700C4042F /* HockeySDK.framework */; };
 		7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687581C210A54FC00324ECF /* AppDelegate.swift */; };
@@ -22,6 +28,8 @@
 		7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585D210A651F00324ECF /* PublicProtocols.swift */; };
 		76875860210A689B00324ECF /* EulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585F210A689B00324ECF /* EulaViewController.swift */; };
 		76875862210A68F800324ECF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875861210A68F800324ECF /* SplashViewController.swift */; };
+		76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */; };
+		76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,12 @@
 /* Begin PBXFileReference section */
 		760ECECB213EE910005B97E7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		760ECECD213EE956005B97E7 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
+		760ECED0213EECF4005B97E7 /* MainQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuizViewController.swift; sourceTree = "<group>"; };
+		760ECED2213EF918005B97E7 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		760ECED4213EF942005B97E7 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		760ECED7213F18BB005B97E7 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		760ECED9213F1BD1005B97E7 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		760ECEDB213F1C64005B97E7 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		7639923B210B7CE700C4042F /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		7639923C210B7CE700C4042F /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		76875819210A54FC00324ECF /* LawyerExamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawyerExamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +77,8 @@
 		7687585D210A651F00324ECF /* PublicProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProtocols.swift; sourceTree = "<group>"; };
 		7687585F210A689B00324ECF /* EulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulaViewController.swift; sourceTree = "<group>"; };
 		76875861210A68F800324ECF /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswerSound.mp3; sourceTree = "<group>"; };
+		76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswerSound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +107,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		760ECECF213EEC31005B97E7 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				76875828210A54FD00324ECF /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		760ECED6213F187F005B97E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				760ECED7213F18BB005B97E7 /* Question.swift */,
+				760ECED9213F1BD1005B97E7 /* Database.swift */,
+				760ECEDB213F1C64005B97E7 /* Parser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7639923A210B7CE700C4042F /* HockeySDK.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +211,7 @@
 		7687584E210A582E00324ECF /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				760ECED6213F187F005B97E7 /* Model */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -184,6 +219,7 @@
 		7687584F210A583B00324ECF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				760ECECF213EEC31005B97E7 /* LaunchScreen */,
 				76875854210A587100324ECF /* AddQuestion */,
 				76875853210A586A00324ECF /* Settings */,
 				76875852210A585700324ECF /* Statistics */,
@@ -196,7 +232,6 @@
 		76875850210A584000324ECF /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				76875828210A54FD00324ECF /* LaunchScreen.storyboard */,
 				76875820210A54FC00324ECF /* Main.storyboard */,
 				7687585A210A5C2F00324ECF /* LoginViewController.swift */,
 				7687585F210A689B00324ECF /* EulaViewController.swift */,
@@ -210,6 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				760ECECD213EE956005B97E7 /* Quiz.storyboard */,
+				760ECED0213EECF4005B97E7 /* MainQuizViewController.swift */,
+				760ECED2213EF918005B97E7 /* QuestionsViewController.swift */,
+				760ECED4213EF942005B97E7 /* CategoryViewController.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -252,6 +290,8 @@
 		76875857210A594D00324ECF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76DBC89D213F223F00C9EEE7 /* Images */,
+				76DBC89C213F223600C9EEE7 /* Audio */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -277,6 +317,22 @@
 				7687585D210A651F00324ECF /* PublicProtocols.swift */,
 			);
 			path = PublicProtocols;
+			sourceTree = "<group>";
+		};
+		76DBC89C213F223600C9EEE7 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */,
+				76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		76DBC89D213F223F00C9EEE7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +443,8 @@
 				7687582A210A54FD00324ECF /* LaunchScreen.storyboard in Resources */,
 				7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */,
 				760ECECE213EE956005B97E7 /* Quiz.storyboard in Resources */,
+				76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */,
+				76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */,
 				76875827210A54FD00324ECF /* Assets.xcassets in Resources */,
 				76875822210A54FC00324ECF /* Main.storyboard in Resources */,
 			);
@@ -429,12 +487,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				760ECED5213EF942005B97E7 /* CategoryViewController.swift in Sources */,
 				760ECECC213EE910005B97E7 /* SignInViewController.swift in Sources */,
 				7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */,
 				7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */,
+				760ECEDC213F1C64005B97E7 /* Parser.swift in Sources */,
 				76875860210A689B00324ECF /* EulaViewController.swift in Sources */,
+				760ECED1213EECF4005B97E7 /* MainQuizViewController.swift in Sources */,
+				760ECEDA213F1BD1005B97E7 /* Database.swift in Sources */,
+				760ECED3213EF918005B97E7 /* QuestionsViewController.swift in Sources */,
 				76875862210A68F800324ECF /* SplashViewController.swift in Sources */,
 				7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */,
+				760ECED8213F18BB005B97E7 /* Question.swift in Sources */,
 				76875825210A54FC00324ECF /* LawyerExamApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

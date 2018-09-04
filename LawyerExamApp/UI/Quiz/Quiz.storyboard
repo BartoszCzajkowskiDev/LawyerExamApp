@@ -1,7 +1,216 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Main Quiz View Controller-->
+        <scene sceneID="PTq-d8-2hQ">
+            <objects>
+                <viewController id="sAE-yS-aZ5" customClass="MainQuizViewController" customModule="LawyerExamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eHD-ar-5c3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lawyer Exam App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Nw-l5-wmi">
+                                <rect key="frame" x="16" y="33" width="343" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Rw4-3j-aPF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W9J-Yr-0je">
+                                <rect key="frame" x="16" y="162" width="343" height="157"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="hO0-4j-24q"/>
+                                </constraints>
+                                <string key="text">More than 1000 questions about Law on the basis of successful publication in order to easily prepare to the Final Lawyer Exam. The quiz is especially dedicated to students and professional lawyers attempting to pass the exam on that matter.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-zv-EVz">
+                                <rect key="frame" x="16" y="525" width="343" height="90"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Fgx-7J-DB6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Check your skills">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xod-lg-Xit" kind="show" id="ce7-uN-j5N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W9J-Yr-0je" firstAttribute="leading" secondItem="smZ-F2-qBe" secondAttribute="leading" constant="16" id="0ry-Je-4cj"/>
+                            <constraint firstItem="Fac-zv-EVz" firstAttribute="leading" secondItem="smZ-F2-qBe" secondAttribute="leading" constant="16" id="8mO-GT-Z76"/>
+                            <constraint firstItem="3Nw-l5-wmi" firstAttribute="leading" secondItem="smZ-F2-qBe" secondAttribute="leading" constant="16" id="DMs-cZ-eEd"/>
+                            <constraint firstItem="W9J-Yr-0je" firstAttribute="top" secondItem="3Nw-l5-wmi" secondAttribute="bottom" constant="64" id="DnU-f8-3uo"/>
+                            <constraint firstItem="smZ-F2-qBe" firstAttribute="bottom" secondItem="Fac-zv-EVz" secondAttribute="bottom" constant="52" id="EdW-NU-nVA"/>
+                            <constraint firstItem="smZ-F2-qBe" firstAttribute="trailing" secondItem="3Nw-l5-wmi" secondAttribute="trailing" constant="16" id="m6g-HL-7Xx"/>
+                            <constraint firstItem="3Nw-l5-wmi" firstAttribute="top" secondItem="smZ-F2-qBe" secondAttribute="top" constant="13" id="nAy-B4-sBZ"/>
+                            <constraint firstItem="smZ-F2-qBe" firstAttribute="trailing" secondItem="Fac-zv-EVz" secondAttribute="trailing" constant="16" id="ouQ-53-oTU"/>
+                            <constraint firstItem="smZ-F2-qBe" firstAttribute="trailing" secondItem="W9J-Yr-0je" secondAttribute="trailing" constant="16" id="zKD-aR-jSl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="smZ-F2-qBe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfr-Oa-apQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456.8" y="-1527.8860569715143"/>
+        </scene>
+        <!--Category View Controller-->
+        <scene sceneID="er5-0x-nxy">
+            <objects>
+                <viewController id="xod-lg-Xit" customClass="CategoryViewController" customModule="LawyerExamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uzz-Nv-cVc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xqX-P7-It7">
+                                <rect key="frame" x="16" y="105" width="343" height="542"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="BVy-MD-r42">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BVy-MD-r42" id="9vn-Kd-Ulc">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose your category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaK-JJ-WIE">
+                                <rect key="frame" x="16" y="20" width="343" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fwa-CM-Chq" firstAttribute="trailing" secondItem="xqX-P7-It7" secondAttribute="trailing" constant="16" id="OBn-7x-Tgd"/>
+                            <constraint firstItem="xqX-P7-It7" firstAttribute="top" secondItem="Fwa-CM-Chq" secondAttribute="top" constant="85" id="i2J-Ev-Mxv"/>
+                            <constraint firstItem="xqX-P7-It7" firstAttribute="leading" secondItem="Fwa-CM-Chq" secondAttribute="leading" constant="16" id="sUr-pS-1dF"/>
+                            <constraint firstItem="Fwa-CM-Chq" firstAttribute="bottom" secondItem="xqX-P7-It7" secondAttribute="bottom" constant="20" id="znP-YZ-A4V"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fwa-CM-Chq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTu-CJ-OLB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2341.5999999999999" y="-1528.785607196402"/>
+        </scene>
+        <!--Questions View Controller-->
+        <scene sceneID="SJm-lF-4we">
+            <objects>
+                <viewController id="p7h-wA-goV" customClass="QuestionsViewController" customModule="LawyerExamApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4l-mm-fKX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inorrect" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxP-bJ-51K">
+                                <rect key="frame" x="16" y="97" width="90" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="8Ky-Dc-faD"/>
+                                    <constraint firstAttribute="width" constant="90" id="bzY-w6-UMd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C06-zQ-Noo">
+                                <rect key="frame" x="269" y="98" width="90" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Tgp-d6-aa0"/>
+                                    <constraint firstAttribute="width" constant="90" id="ztt-Xl-K2m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Civil Law" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQW-RI-Fzv">
+                                <rect key="frame" x="16" y="29" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="y8U-cY-hns"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the capital of Poland?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXQ-vY-KVI">
+                                <rect key="frame" x="16" y="172" width="343" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2jK-tt-P7i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9z-1R-ybI">
+                                <rect key="frame" x="16" y="301" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cracow"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwA-b3-Fpo">
+                                <rect key="frame" x="16" y="383" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Warsaw"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kno-0a-IAG">
+                                <rect key="frame" x="16" y="463" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gdansk"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-We-0mC">
+                                <rect key="frame" x="16" y="546" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Wroclaw"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZXQ-vY-KVI" firstAttribute="leading" secondItem="bcc-K3-UHr" secondAttribute="leading" constant="16" id="1HX-Nb-fHV"/>
+                            <constraint firstItem="bcc-K3-UHr" firstAttribute="trailing" secondItem="ZXQ-vY-KVI" secondAttribute="trailing" constant="16" id="4QF-hQ-i9H"/>
+                            <constraint firstItem="SQW-RI-Fzv" firstAttribute="top" secondItem="bcc-K3-UHr" secondAttribute="top" constant="9" id="G2K-Y4-QcR"/>
+                            <constraint firstItem="bcc-K3-UHr" firstAttribute="trailing" secondItem="SQW-RI-Fzv" secondAttribute="trailing" constant="16" id="GUV-MN-Obf"/>
+                            <constraint firstItem="TxP-bJ-51K" firstAttribute="leading" secondItem="bcc-K3-UHr" secondAttribute="leading" constant="16" id="GYK-PK-QHy"/>
+                            <constraint firstItem="bcc-K3-UHr" firstAttribute="trailing" secondItem="C06-zQ-Noo" secondAttribute="trailing" constant="16" id="Qm7-mE-y7I"/>
+                            <constraint firstItem="C06-zQ-Noo" firstAttribute="top" secondItem="SQW-RI-Fzv" secondAttribute="bottom" constant="19" id="WhA-Fo-7Aj"/>
+                            <constraint firstItem="ZXQ-vY-KVI" firstAttribute="top" secondItem="SQW-RI-Fzv" secondAttribute="bottom" constant="93" id="lH5-sa-Cyd"/>
+                            <constraint firstItem="SQW-RI-Fzv" firstAttribute="leading" secondItem="bcc-K3-UHr" secondAttribute="leading" constant="16" id="pS1-7B-k2P"/>
+                            <constraint firstItem="TxP-bJ-51K" firstAttribute="top" secondItem="SQW-RI-Fzv" secondAttribute="bottom" constant="18" id="s6M-hQ-pm8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bcc-K3-UHr"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="SQW-RI-Fzv" id="YH0-b4-0bm"/>
+                        <outlet property="correctLabel" destination="C06-zQ-Noo" id="Cbf-BU-1G6"/>
+                        <outlet property="firstAnswerButton" destination="A9z-1R-ybI" id="hEj-ba-ppA"/>
+                        <outlet property="fourthAnswerButton" destination="0m7-We-0mC" id="fBu-9Q-OoL"/>
+                        <outlet property="incorrectLabel" destination="TxP-bJ-51K" id="ndo-L6-H7q"/>
+                        <outlet property="questionLabel" destination="ZXQ-vY-KVI" id="qk5-Wk-5dH"/>
+                        <outlet property="secondAnswerButton" destination="kwA-b3-Fpo" id="b8Z-Nn-8ek"/>
+                        <outlet property="thirdAnswerButton" destination="Kno-0a-IAG" id="gBE-O3-QcZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gK-AO-ffJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3237.5999999999999" y="-1529.6851574212894"/>
+        </scene>
+    </scenes>
 </document>
