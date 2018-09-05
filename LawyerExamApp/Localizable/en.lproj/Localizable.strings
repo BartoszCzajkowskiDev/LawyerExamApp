@@ -9,5 +9,26 @@
 // ENGLISH - base
 
 // Login Panel:
-login.loginLabel = "ENGLISH";
+loginViewController.loginLabel = "LOGIN";
+loginViewController.emailLabel = "Email:";
+loginViewController.passwordLabel = "Password";
+loginViewController.loginButton = "Login";
+loginViewController.signInLabel = "Don't have an accout";
+loginViewController.signInButton = "Sign in";
+
+eulaViewController.eulaTitleLabel = "EULA";
+eulaViewController.rejectButton = "Reject";
+eulaViewController.acceptButton = "Accept";
+
+registrationViewController.registerTitle = "Fill all text field in order to log in to the Application";
+registrationViewController.usernameLabel = "Username:";
+registrationViewController.emailLabel = "Email:";
+registrationViewController.passwordLabel = "Password:";
+registrationViewController.repeatPasswordLabel = "Repeat password:";
+registrationViewController.signInButton = "SIGN IN";
+registrationViewController.returnToLoginButton = "I have an account yet. Let me log in.";
+
+
+
+
 

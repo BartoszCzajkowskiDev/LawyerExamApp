@@ -33,3 +33,9 @@ class MainViewController: UIViewController {
     
 
 }
+
+extension MainViewController: LanguageLocalization{
+    func setupLocalizedStrings(language: AppLanguage) {
+        
+    }
+}

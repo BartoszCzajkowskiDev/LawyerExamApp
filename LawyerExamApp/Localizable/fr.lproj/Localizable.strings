@@ -9,4 +9,21 @@
 // FRENCH
 
 // Login Panel:
-login.loginLabel = "FRENCH";
+loginViewController.loginLabel = "LOGOWANIE";
+loginViewController.emailLabel = "Email:";
+loginViewController.passwordLabel = "Mot do passe";
+loginViewController.loginButton = "Se connecter";
+loginViewController.signInLabel = "Vous n'avez pas encore de compte";
+loginViewController.signInButton = "Enregistrer";
+
+eulaViewController.eulaTitleLabel = "EULA";
+eulaViewController.rejectButton = "Rejeter";
+eulaViewController.acceptButton = "Accepter";
+
+registrationViewController.registerTitle = "Remplissez tout le champ de texte afin de vous connecter à l'application.";
+registrationViewController.usernameLabel = "Utilisateur:";
+registrationViewController.emailLabel = "Email:";
+registrationViewController.passwordLabel = "Mot de passe:";
+registrationViewController.repeatPasswordLabel = "Repeter le mot de passe:";
+registrationViewController.signInButton = "ENREGISTRER";
+registrationViewController.returnToLoginButton = "J'ai deja le compte. Se connecter";

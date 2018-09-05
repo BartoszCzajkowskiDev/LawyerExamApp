@@ -14,8 +14,8 @@ class EulaViewController: UIViewController {
     @IBOutlet weak var eulaTitleLabel: UILabel!
     @IBOutlet weak var eulaTitleView: UIView!
     @IBOutlet weak var eulaContentTextView: UITextView!
-    @IBOutlet weak var rejectOutlet: UIButton!
-    @IBOutlet weak var acceptOutlet: UIButton!
+    @IBOutlet weak var rejectButton: UIButton!
+    @IBOutlet weak var acceptButton: UIButton!
     
     @IBAction func rejectButton(_ sender: Any) {
         exit(0)
@@ -41,6 +41,15 @@ class EulaViewController: UIViewController {
         eulaContentTextView.text = eula
         eulaContentTextView.isEditable = false
         eulaContentTextView.isScrollEnabled = true
-
+        
+        setupLocalizedStrings(language: AppLanguage.Polish)
     }
 }
+extension EulaViewController: LanguageLocalization{
+    func setupLocalizedStrings(language: AppLanguage) {
+        eulaTitleLabel.text = "loginViewController.loginLabel".localized(lang: language)
+        rejectButton.setTitle("eulaViewController.rejectButton".localized(lang: language), for: .normal)
+        acceptButton.setTitle("eulaViewController.acceptButton".localized(lang: language), for: .normal)
+    }
+}
+

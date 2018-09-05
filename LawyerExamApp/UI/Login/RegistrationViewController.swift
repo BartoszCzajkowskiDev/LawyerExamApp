@@ -20,7 +20,8 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var repeatPasswordTextField: UITextField!
-    
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var returnToLoginButton: UIButton!
     
     @IBAction func signInButton(_ sender: Any) {
         let username = usernameTextField.text
@@ -49,10 +50,6 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             KeychainManager.shared.setPassword(password: password)
         }
 
-        
-        
-        
-        
         alert.displayAlertMessageWithDismissAction(title: "Congratulations!", message: "Registraction is successful. Thank you!", acceptance: "OK", viewController: self)
     }
     
@@ -67,6 +64,8 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
         self.repeatPasswordTextField.delegate = self
+        
+        setupLocalizedStrings(language: AppLanguage.Polish)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -80,6 +79,15 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         repeatPasswordTextField.resignFirstResponder()
         return true
     }
-
-
 }
+extension RegistrationViewController: LanguageLocalization{
+    func setupLocalizedStrings(language: AppLanguage) {
+        registerTitle.text = "registrationViewController.registerTitle".localized(lang: language)
+        usernameLabel.text = "registrationViewController.usernameLabel".localized(lang: language)
+        passwordLabel.text = "registrationViewController.passwordLabel".localized(lang: language)
+        repeatPasswordLabel.text = "registrationViewController.repeatPasswordLabel".localized(lang: language)
+        signInButton.setTitle("registrationViewController.signInButton".localized(lang: language), for: .normal)
+        returnToLoginButton.setTitle("registrationViewController.returnToLoginButton".localized(lang: language), for: .normal)
+    }
+}
+

@@ -9,4 +9,21 @@
 // POLISH
 
 // Login Panel:
-login.loginLabel = "POLISH";
+loginViewController.loginLabel = "LOGOWANIE";
+loginViewController.emailLabel = "Email:";
+loginViewController.passwordLabel = "Hasło";
+loginViewController.loginButton = "Zaloguj";
+loginViewController.signInLabel = "Nie masz jeszcze konta";
+loginViewController.signInButton = "Zarejestruj się";
+
+eulaViewController.eulaTitleLabel = "EULA";
+eulaViewController.rejectButton = "Odrzuć";
+eulaViewController.acceptButton = "Zatwierdź";
+
+registrationViewController.registerTitle = "Wypełnij wszystkie pola w celu zalogowania się do aplikacji";
+registrationViewController.usernameLabel = "Użytkownik:";
+registrationViewController.emailLabel = "Email:";
+registrationViewController.passwordLabel = "Hasło:";
+registrationViewController.repeatPasswordLabel = "Powtórz hasło:";
+registrationViewController.signInButton = "ZAREJESTRUJ SIĘ";
+registrationViewController.returnToLoginButton = "Masz już konto? Przejdź do logowania";

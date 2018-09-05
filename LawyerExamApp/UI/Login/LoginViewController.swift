@@ -81,7 +81,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
 extension LoginViewController: LanguageLocalization{
     func setupLocalizedStrings(language: AppLanguage) {
-        loginLabel.text = "login.loginLabel".localized(lang: language)
+        loginLabel.text = "loginViewController.loginLabel".localized(lang: language)
+        emailLabel.text = "loginViewController.emailLabel".localized(lang: language)
+        passwordLabel.text = "loginViewController.passwordLabel".localized(lang: language)
+        loginButton.setTitle("loginViewController.loginButton".localized(lang: language), for: .normal)
+        signInLabel.text = "loginViewController.signInLabel".localized(lang: language)
+        signInButton.setTitle("loginViewController.signInButton".localized(lang: language), for: .normal)   
     }
     
 }

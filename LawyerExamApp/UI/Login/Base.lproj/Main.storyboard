@@ -307,6 +307,8 @@
                         <outlet property="registerTitle" destination="aSS-oj-Zpl" id="H3V-rs-5Ex"/>
                         <outlet property="repeatPasswordLabel" destination="qOn-Ms-FvM" id="2hg-kq-FYB"/>
                         <outlet property="repeatPasswordTextField" destination="ooF-Az-dcH" id="pBb-yG-WmY"/>
+                        <outlet property="returnToLoginButton" destination="tXj-kN-kMJ" id="LOS-Bg-U27"/>
+                        <outlet property="signInButton" destination="ny4-8B-Qxd" id="Hdh-TX-Dtq"/>
                         <outlet property="usernameLabel" destination="YxJ-eW-hfh" id="7xA-TK-0Yy"/>
                         <outlet property="usernameTextField" destination="NOl-Iq-EYu" id="vxK-sm-Gzu"/>
                     </connections>
@@ -371,7 +373,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aE7-Kz-cIv">
                                         <rect key="frame" x="8" y="8" width="327" height="92"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oar-Uu-4n9">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EULA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oar-Uu-4n9">
                                                 <rect key="frame" x="8" y="8" width="311" height="76"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -414,11 +416,11 @@
                         <viewLayoutGuide key="safeArea" id="aoo-IS-TUO"/>
                     </view>
                     <connections>
-                        <outlet property="acceptOutlet" destination="oOR-9M-2ZT" id="xwq-7E-CCz"/>
+                        <outlet property="acceptButton" destination="oOR-9M-2ZT" id="19r-H6-enG"/>
                         <outlet property="eulaContentTextView" destination="Brl-YL-AJS" id="i0u-VC-k7j"/>
                         <outlet property="eulaTitleLabel" destination="oar-Uu-4n9" id="fec-TL-kpX"/>
                         <outlet property="eulaTitleView" destination="aE7-Kz-cIv" id="EXl-5N-meY"/>
-                        <outlet property="rejectOutlet" destination="yti-fh-KwD" id="mKB-lW-bLP"/>
+                        <outlet property="rejectButton" destination="yti-fh-KwD" id="YHK-GP-ntu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJg-4q-nh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -461,7 +463,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAa-mF-wee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279" y="140"/>
+            <point key="canvasLocation" x="300" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gp4-QR-QNw">
