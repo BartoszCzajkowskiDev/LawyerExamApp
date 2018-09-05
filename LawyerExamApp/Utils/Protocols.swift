@@ -8,13 +8,15 @@
 
 import Foundation
 
+
 public protocol LanguageLocalization {
-    
+    func setupLocalizedStrings(language: AppLanguage)
 }
 public protocol ThemeApplicable {
-    
+    func changeTheme(to theme:AppTheme)
 }
 
 public protocol FontApplicable {
-    
+    func boldFont(set bolded: Bool)
 }
+

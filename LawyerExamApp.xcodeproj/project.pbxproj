@@ -28,14 +28,14 @@
 		76875835210A54FD00324ECF /* LawyerExamAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875834210A54FD00324ECF /* LawyerExamAppTests.swift */; };
 		76875840210A54FD00324ECF /* LawyerExamAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687583F210A54FD00324ECF /* LawyerExamAppUITests.swift */; };
 		7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585A210A5C2F00324ECF /* LoginViewController.swift */; };
-		7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585D210A651F00324ECF /* PublicProtocols.swift */; };
+		7687585E210A651F00324ECF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585D210A651F00324ECF /* Protocols.swift */; };
 		76875860210A689B00324ECF /* EulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585F210A689B00324ECF /* EulaViewController.swift */; };
 		76AD50252140022B006EAFC9 /* eula.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76AD50242140022B006EAFC9 /* eula.txt */; };
+		76AD502921401B76006EAFC9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AD502821401B76006EAFC9 /* Models.swift */; };
 		76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */; };
 		76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */; };
 		76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A4213F335900C9EEE7 /* Extensions.swift */; };
 		76DBC8A7213F343000C9EEE7 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */; };
-		76DBC8AB213FCE9F00C9EEE7 /* PublicEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8AA213FCE9F00C9EEE7 /* PublicEnums.swift */; };
 		76DBC8AD213FCF2700C9EEE7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC8AC213FCF2700C9EEE7 /* Settings.storyboard */; };
 		76DBC8AF213FE09D00C9EEE7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8AE213FE09D00C9EEE7 /* MainViewController.swift */; };
 		8AA3890AD38205AC552826EC /* Pods_LawyerExamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CCC6AD6A64186A2669CAB5 /* Pods_LawyerExamApp.framework */; };
@@ -89,14 +89,14 @@
 		7687583F210A54FD00324ECF /* LawyerExamAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawyerExamAppUITests.swift; sourceTree = "<group>"; };
 		76875841210A54FD00324ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7687585A210A5C2F00324ECF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		7687585D210A651F00324ECF /* PublicProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProtocols.swift; sourceTree = "<group>"; };
+		7687585D210A651F00324ECF /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		7687585F210A689B00324ECF /* EulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulaViewController.swift; sourceTree = "<group>"; };
 		76AD50242140022B006EAFC9 /* eula.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eula.txt; sourceTree = "<group>"; };
+		76AD502821401B76006EAFC9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A4213F335900C9EEE7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
-		76DBC8AA213FCE9F00C9EEE7 /* PublicEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicEnums.swift; sourceTree = "<group>"; };
 		76DBC8AC213FCF2700C9EEE7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		76DBC8AE213FE09D00C9EEE7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D4D42CD5F44AAFC7B4E83276 /* Pods-LawyerExamAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawyerExamAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LawyerExamAppTests/Pods-LawyerExamAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,19 +150,10 @@
 		760ECECF213EEC31005B97E7 /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
+				7687581C210A54FC00324ECF /* AppDelegate.swift */,
 				76875828210A54FD00324ECF /* LaunchScreen.storyboard */,
 			);
 			path = LaunchScreen;
-			sourceTree = "<group>";
-		};
-		760ECED6213F187F005B97E7 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				760ECED7213F18BB005B97E7 /* Question.swift */,
-				760ECED9213F1BD1005B97E7 /* Database.swift */,
-				760ECEDB213F1C64005B97E7 /* Parser.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		7639923A210B7CE700C4042F /* HockeySDK.embeddedframework */ = {
@@ -209,13 +200,11 @@
 		7687581B210A54FC00324ECF /* LawyerExamApp */ = {
 			isa = PBXGroup;
 			children = (
-				7687584E210A582E00324ECF /* Database */,
+				7687584E210A582E00324ECF /*  Database - Model */,
 				76875859210A598F00324ECF /* Utils */,
 				7687584D210A581D00324ECF /* Manager */,
 				7687584F210A583B00324ECF /* UI */,
 				76875857210A594D00324ECF /* Resources */,
-				76875858210A595D00324ECF /* Extensions */,
-				7687581C210A54FC00324ECF /* AppDelegate.swift */,
 				76875826210A54FD00324ECF /* Assets.xcassets */,
 				7687582B210A54FD00324ECF /* Info.plist */,
 				76875823210A54FC00324ECF /* LawyerExamApp.xcdatamodeld */,
@@ -250,12 +239,14 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		7687584E210A582E00324ECF /* Database */ = {
+		7687584E210A582E00324ECF /*  Database - Model */ = {
 			isa = PBXGroup;
 			children = (
-				760ECED6213F187F005B97E7 /* Model */,
+				760ECED7213F18BB005B97E7 /* Question.swift */,
+				760ECED9213F1BD1005B97E7 /* Database.swift */,
+				760ECEDB213F1C64005B97E7 /* Parser.swift */,
 			);
-			path = Database;
+			path = " Database - Model";
 			sourceTree = "<group>";
 		};
 		7687584F210A583B00324ECF /* UI */ = {
@@ -340,21 +331,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		76875858210A595D00324ECF /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				76DBC8A4213F335900C9EEE7 /* Extensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		76875859210A598F00324ECF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				7687585D210A651F00324ECF /* PublicProtocols.swift */,
 				76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */,
-				76DBC8AA213FCE9F00C9EEE7 /* PublicEnums.swift */,
+				7687585D210A651F00324ECF /* Protocols.swift */,
 				7612617A213FE8DC0073FE01 /* AlertMessage.swift */,
+				76DBC8A4213F335900C9EEE7 /* Extensions.swift */,
+				76AD502821401B76006EAFC9 /* Models.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -618,18 +602,18 @@
 				760ECED5213EF942005B97E7 /* CategoryViewController.swift in Sources */,
 				760ECECC213EE910005B97E7 /* RegistrationViewController.swift in Sources */,
 				7612617B213FE8DC0073FE01 /* AlertMessage.swift in Sources */,
-				7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */,
+				7687585E210A651F00324ECF /* Protocols.swift in Sources */,
 				7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */,
 				760ECEDC213F1C64005B97E7 /* Parser.swift in Sources */,
 				76875860210A689B00324ECF /* EulaViewController.swift in Sources */,
 				760ECED1213EECF4005B97E7 /* MainQuizViewController.swift in Sources */,
 				76DBC8AF213FE09D00C9EEE7 /* MainViewController.swift in Sources */,
-				76DBC8AB213FCE9F00C9EEE7 /* PublicEnums.swift in Sources */,
 				76DBC8A7213F343000C9EEE7 /* KeychainManager.swift in Sources */,
 				760ECEDA213F1BD1005B97E7 /* Database.swift in Sources */,
 				760ECED3213EF918005B97E7 /* QuestionsViewController.swift in Sources */,
 				76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */,
 				7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */,
+				76AD502921401B76006EAFC9 /* Models.swift in Sources */,
 				760ECED8213F18BB005B97E7 /* Question.swift in Sources */,
 				76875825210A54FC00324ECF /* LawyerExamApp.xcdatamodeld in Sources */,
 			);

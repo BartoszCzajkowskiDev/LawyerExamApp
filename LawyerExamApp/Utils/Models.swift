@@ -1,5 +1,5 @@
 //
-//  PublicEnums.swift
+//  Models.swift
 //  LawyerExamApp
 //
 //  Created by Bartosz Czajkowski on 05/09/2018.
@@ -8,8 +8,13 @@
 
 import Foundation
 
+struct ThemeData{
+    let themeName:String
+    let themeIcon:String
+    let theme:AppTheme
+}
+
 public enum AppTheme:String {
-    case None = ""
     case White = "White"
     case Gray = "Gray"
     case Green = "Green"

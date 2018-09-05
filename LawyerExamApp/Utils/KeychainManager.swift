@@ -77,18 +77,19 @@ final class KeychainManager{
         }
         return user
     }
-//    public func obtainTheme()->AppTheme{
-//        guard let theme:String = keychain["theme"]  else {
-//            return AppTheme.Orange
-//        }
-//        return AppTheme(rawValue: theme) ?? AppTheme.Orange
-//    }
-//    public func obtainLanguage()->AppLanguage{
-//        guard let url:String = keychain["language"]  else {
-//            return AppLanguage.English
-//        }
-//        return AppLanguage(rawValue: url) ?? AppLanguage.English
-//    }
+    public func obtainTheme()->AppTheme{
+        guard let theme:String = keychain["theme"]  else {
+            return AppTheme.White
+        }
+        return AppTheme(rawValue: theme) ?? AppTheme.White
+    }
+    public func obtainLanguage()->AppLanguage{
+        guard let url:String = keychain["language"]  else {
+            return AppLanguage.English
+        }
+        return AppLanguage(rawValue: url) ?? AppLanguage.Polish
+    }
+    
     public func isEulaAccepted() -> Bool {
         if let version = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) {
             let actualUserEmail = KeychainManager.shared.obtainUserEmail()
@@ -112,6 +113,7 @@ final class KeychainManager{
         keychainValues["loggedIn"] = keychain["loggedIn"]
         keychainValues["theme"] = keychain["theme"]
         keychainValues["language"] = keychain["language"]
+
         
         for (key,value) in keychainValues{
             print("\(key) : \(value)")
@@ -125,5 +127,4 @@ final class KeychainManager{
         keychain["theme"] = reset
         keychain["language"] = reset
     }
-    
 }
