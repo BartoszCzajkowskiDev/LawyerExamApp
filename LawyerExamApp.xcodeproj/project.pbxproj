@@ -33,6 +33,10 @@
 		76AD50252140022B006EAFC9 /* eula.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76AD50242140022B006EAFC9 /* eula.txt */; };
 		76AD502921401B76006EAFC9 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AD502821401B76006EAFC9 /* Models.swift */; };
 		76AD503521402372006EAFC9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76AD503721402372006EAFC9 /* Localizable.strings */; };
+		76AD503E214043C5006EAFC9 /* Statistics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76AD503D214043C5006EAFC9 /* Statistics.storyboard */; };
+		76AD504321404403006EAFC9 /* Result.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76AD504221404403006EAFC9 /* Result.storyboard */; };
+		76AD504521404427006EAFC9 /* StandardResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AD504421404427006EAFC9 /* StandardResultViewController.swift */; };
+		76AD50472140443D006EAFC9 /* CongratsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AD50462140443D006EAFC9 /* CongratsViewController.swift */; };
 		76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */; };
 		76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */; };
 		76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A4213F335900C9EEE7 /* Extensions.swift */; };
@@ -97,6 +101,10 @@
 		76AD503621402372006EAFC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		76AD503B214023C7006EAFC9 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		76AD503C214023D3006EAFC9 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		76AD503D214043C5006EAFC9 /* Statistics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Statistics.storyboard; sourceTree = "<group>"; };
+		76AD504221404403006EAFC9 /* Result.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Result.storyboard; sourceTree = "<group>"; };
+		76AD504421404427006EAFC9 /* StandardResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardResultViewController.swift; sourceTree = "<group>"; };
+		76AD50462140443D006EAFC9 /* CongratsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewController.swift; sourceTree = "<group>"; };
 		76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A4213F335900C9EEE7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -247,6 +255,7 @@
 		7687584F210A583B00324ECF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				76AD503F214043CE006EAFC9 /* Result */,
 				760ECECF213EEC31005B97E7 /* LaunchScreen */,
 				76875854210A587100324ECF /* AddQuestion */,
 				76875853210A586A00324ECF /* Settings */,
@@ -283,6 +292,7 @@
 		76875852210A585700324ECF /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
+				76AD503D214043C5006EAFC9 /* Statistics.storyboard */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -330,6 +340,16 @@
 				76AD503721402372006EAFC9 /* Localizable.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		76AD503F214043CE006EAFC9 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				76AD504221404403006EAFC9 /* Result.storyboard */,
+				76AD504421404427006EAFC9 /* StandardResultViewController.swift */,
+				76AD50462140443D006EAFC9 /* CongratsViewController.swift */,
+			);
+			path = Result;
 			sourceTree = "<group>";
 		};
 		76DBC89C213F223600C9EEE7 /* Audio */ = {
@@ -471,10 +491,12 @@
 			files = (
 				7687582A210A54FD00324ECF /* LaunchScreen.storyboard in Resources */,
 				7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */,
+				76AD503E214043C5006EAFC9 /* Statistics.storyboard in Resources */,
 				760ECECE213EE956005B97E7 /* Quiz.storyboard in Resources */,
 				76DBC8AD213FCF2700C9EEE7 /* Settings.storyboard in Resources */,
 				76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */,
 				76AD503521402372006EAFC9 /* Localizable.strings in Resources */,
+				76AD504321404403006EAFC9 /* Result.storyboard in Resources */,
 				76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */,
 				76875827210A54FD00324ECF /* Assets.xcassets in Resources */,
 				76AD50252140022B006EAFC9 /* eula.txt in Resources */,
@@ -603,6 +625,8 @@
 				76DBC8A7213F343000C9EEE7 /* KeychainManager.swift in Sources */,
 				760ECEDA213F1BD1005B97E7 /* Database.swift in Sources */,
 				760ECED3213EF918005B97E7 /* QuestionsViewController.swift in Sources */,
+				76AD50472140443D006EAFC9 /* CongratsViewController.swift in Sources */,
+				76AD504521404427006EAFC9 /* StandardResultViewController.swift in Sources */,
 				76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */,
 				7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */,
 				76AD502921401B76006EAFC9 /* Models.swift in Sources */,
