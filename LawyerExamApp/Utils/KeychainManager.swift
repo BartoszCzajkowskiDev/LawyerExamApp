@@ -91,11 +91,11 @@ final class KeychainManager{
 //    }
     public func isEulaAccepted() -> Bool {
         if let version = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) {
-            let actualUser = KeychainManager.shared.obtainUsername()
+            let actualUserEmail = KeychainManager.shared.obtainUserEmail()
             guard let actualVersion = version as? String else {
                 return false
             }
-            let userVersionS = "\(actualUser)" + "_" + "\(actualVersion)" + "_FileRepository"
+            let userVersionS = "\(actualUserEmail)" + "_" + "\(actualVersion)" + "_LawyerExamApp"
             if keychain[userVersionS] == "1" {
                 return true
     

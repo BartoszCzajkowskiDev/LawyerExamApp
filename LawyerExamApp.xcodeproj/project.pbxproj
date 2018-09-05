@@ -30,6 +30,7 @@
 		7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585A210A5C2F00324ECF /* LoginViewController.swift */; };
 		7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585D210A651F00324ECF /* PublicProtocols.swift */; };
 		76875860210A689B00324ECF /* EulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585F210A689B00324ECF /* EulaViewController.swift */; };
+		76AD50252140022B006EAFC9 /* eula.txt in Resources */ = {isa = PBXBuildFile; fileRef = 76AD50242140022B006EAFC9 /* eula.txt */; };
 		76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */; };
 		76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */; };
 		76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A4213F335900C9EEE7 /* Extensions.swift */; };
@@ -90,6 +91,7 @@
 		7687585A210A5C2F00324ECF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7687585D210A651F00324ECF /* PublicProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProtocols.swift; sourceTree = "<group>"; };
 		7687585F210A689B00324ECF /* EulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulaViewController.swift; sourceTree = "<group>"; };
+		76AD50242140022B006EAFC9 /* eula.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = eula.txt; sourceTree = "<group>"; };
 		76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A4213F335900C9EEE7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 		76875857210A594D00324ECF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76AD50242140022B006EAFC9 /* eula.txt */,
 				76DBC89D213F223F00C9EEE7 /* Images */,
 				76DBC89C213F223600C9EEE7 /* Audio */,
 			);
@@ -498,6 +501,7 @@
 				76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */,
 				76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */,
 				76875827210A54FD00324ECF /* Assets.xcassets in Resources */,
+				76AD50252140022B006EAFC9 /* eula.txt in Resources */,
 				76875822210A54FC00324ECF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

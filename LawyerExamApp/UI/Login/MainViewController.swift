@@ -16,8 +16,13 @@ class MainViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         let isUserLoggedIn = KeychainManager.shared.isUserLogged()
-        if !isUserLoggedIn {
+        let isEulaAccepted = KeychainManager.shared.isEulaAccepted()
+        
+        if !isUserLoggedIn{
             self.performSegue(withIdentifier: "loginSegue", sender: self)
+        }
+        if !isEulaAccepted{
+            self.performSegue(withIdentifier: "eulaSegue", sender: self)
         }
     }
     
