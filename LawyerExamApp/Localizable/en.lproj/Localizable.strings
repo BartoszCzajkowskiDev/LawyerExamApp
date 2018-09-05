@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  LawyerExamApp
+
+  Created by Bartosz Czajkowski on 05/09/2018.
+  Copyright © 2018 BartoszCzajkowski. All rights reserved.
+*/
+
+// ENGLISH - base
+
+// Login Panel:
+login.loginLabel = "ENGLISH";
+

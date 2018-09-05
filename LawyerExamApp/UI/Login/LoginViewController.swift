@@ -51,6 +51,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         self.emailTextField.delegate = self
         self.passwordTextField.delegate = self
+        
+        setupLocalizedStrings(language: .Polish)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -77,4 +79,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
 }
 
+extension LoginViewController: LanguageLocalization{
+    func setupLocalizedStrings(language: AppLanguage) {
+        loginLabel.text = "login.loginLabel".localized(lang: language)
+    }
+    
+}
 
