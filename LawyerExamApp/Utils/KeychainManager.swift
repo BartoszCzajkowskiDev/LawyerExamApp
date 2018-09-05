@@ -20,17 +20,23 @@ final class KeychainManager{
     static let shared = KeychainManager()
     private let keychain = Keychain(service: "com.crafcode.lawyerexamapp")
     
-    public func saveUserName(username:String){
+    public func setUsername(username:String){
         keychain["username"] = username
     }
-    public func savePassword(password:String){
+    public func setEmail(email:String){
+        keychain["email"] = email
+    }
+    public func setPassword(password:String){
         keychain["password"] = password
     }
-    public func clearUserName(username:String){
+    public func clearUsername(username:String){
         keychain["username"] = username
     }
     public func clearPassword(password:String){
         keychain["password"] = password
+    }
+    public func clearEmail(password:String){
+        keychain["email"] = password
     }
     public func setUserLogged(){
         keychain["loggedIn"] = "1"
@@ -53,8 +59,20 @@ final class KeychainManager{
         }
         return logg == "1"
     }
-    public func obtainUserName()->String{
+    public func obtainUsername()->String{
         guard let user:String = keychain["username"]  else {
+            return ""
+        }
+        return user
+    }
+    public func obtainUserEmail()->String{
+        guard let user:String = keychain["email"]  else {
+            return ""
+        }
+        return user
+    }
+    public func obtainUserPassword()->String{
+        guard let user:String = keychain["password"]  else {
             return ""
         }
         return user
@@ -73,7 +91,7 @@ final class KeychainManager{
 //    }
     public func isEulaAccepted() -> Bool {
         if let version = Bundle.main.object(forInfoDictionaryKey: kCFBundleVersionKey as String) {
-            let actualUser = KeychainManager.shared.obtainUserName()
+            let actualUser = KeychainManager.shared.obtainUsername()
             guard let actualVersion = version as? String else {
                 return false
             }

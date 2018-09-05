@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A50623F5F1149BBAA3AF293 /* Pods_LawyerExamAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E514EE0F84655AEBDEC70CA6 /* Pods_LawyerExamAppUITests.framework */; };
 		224626766F4EE3D500D5D8CA /* Pods_LawyerExamAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AE80E44173FA3739F1BDBDE /* Pods_LawyerExamAppTests.framework */; };
-		760ECECC213EE910005B97E7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECECB213EE910005B97E7 /* SignInViewController.swift */; };
+		760ECECC213EE910005B97E7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECECB213EE910005B97E7 /* RegistrationViewController.swift */; };
 		760ECECE213EE956005B97E7 /* Quiz.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760ECECD213EE956005B97E7 /* Quiz.storyboard */; };
 		760ECED1213EECF4005B97E7 /* MainQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED0213EECF4005B97E7 /* MainQuizViewController.swift */; };
 		760ECED3213EF918005B97E7 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED2213EF918005B97E7 /* QuestionsViewController.swift */; };
@@ -17,6 +17,7 @@
 		760ECED8213F18BB005B97E7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED7213F18BB005B97E7 /* Question.swift */; };
 		760ECEDA213F1BD1005B97E7 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECED9213F1BD1005B97E7 /* Database.swift */; };
 		760ECEDC213F1C64005B97E7 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760ECEDB213F1C64005B97E7 /* Parser.swift */; };
+		7612617B213FE8DC0073FE01 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7612617A213FE8DC0073FE01 /* AlertMessage.swift */; };
 		7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7639923B210B7CE700C4042F /* HockeySDKResources.bundle */; };
 		7639923E210B7CE700C4042F /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7639923C210B7CE700C4042F /* HockeySDK.framework */; };
 		7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687581C210A54FC00324ECF /* AppDelegate.swift */; };
@@ -29,11 +30,13 @@
 		7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585A210A5C2F00324ECF /* LoginViewController.swift */; };
 		7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585D210A651F00324ECF /* PublicProtocols.swift */; };
 		76875860210A689B00324ECF /* EulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7687585F210A689B00324ECF /* EulaViewController.swift */; };
-		76875862210A68F800324ECF /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76875861210A68F800324ECF /* SplashViewController.swift */; };
 		76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */; };
 		76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */; };
 		76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A4213F335900C9EEE7 /* Extensions.swift */; };
 		76DBC8A7213F343000C9EEE7 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */; };
+		76DBC8AB213FCE9F00C9EEE7 /* PublicEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8AA213FCE9F00C9EEE7 /* PublicEnums.swift */; };
+		76DBC8AD213FCF2700C9EEE7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76DBC8AC213FCF2700C9EEE7 /* Settings.storyboard */; };
+		76DBC8AF213FE09D00C9EEE7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DBC8AE213FE09D00C9EEE7 /* MainViewController.swift */; };
 		8AA3890AD38205AC552826EC /* Pods_LawyerExamApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27CCC6AD6A64186A2669CAB5 /* Pods_LawyerExamApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +63,7 @@
 		27CCC6AD6A64186A2669CAB5 /* Pods_LawyerExamApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LawyerExamApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AE80E44173FA3739F1BDBDE /* Pods_LawyerExamAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LawyerExamAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B497973831A5F16527D868 /* Pods-LawyerExamApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawyerExamApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-LawyerExamApp/Pods-LawyerExamApp.release.xcconfig"; sourceTree = "<group>"; };
-		760ECECB213EE910005B97E7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		760ECECB213EE910005B97E7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		760ECECD213EE956005B97E7 /* Quiz.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Quiz.storyboard; sourceTree = "<group>"; };
 		760ECED0213EECF4005B97E7 /* MainQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQuizViewController.swift; sourceTree = "<group>"; };
 		760ECED2213EF918005B97E7 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		760ECED7213F18BB005B97E7 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		760ECED9213F1BD1005B97E7 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		760ECEDB213F1C64005B97E7 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		7612617A213FE8DC0073FE01 /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		7639923B210B7CE700C4042F /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		7639923C210B7CE700C4042F /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
 		76875819210A54FC00324ECF /* LawyerExamApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LawyerExamApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,11 +90,13 @@
 		7687585A210A5C2F00324ECF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7687585D210A651F00324ECF /* PublicProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicProtocols.swift; sourceTree = "<group>"; };
 		7687585F210A689B00324ECF /* EulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EulaViewController.swift; sourceTree = "<group>"; };
-		76875861210A68F800324ECF /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		76DBC89E213F225C00C9EEE7 /* correctAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correctAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A0213F226500C9EEE7 /* wrongAnswerSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrongAnswerSound.mp3; sourceTree = "<group>"; };
 		76DBC8A4213F335900C9EEE7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		76DBC8AA213FCE9F00C9EEE7 /* PublicEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicEnums.swift; sourceTree = "<group>"; };
+		76DBC8AC213FCF2700C9EEE7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		76DBC8AE213FE09D00C9EEE7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D4D42CD5F44AAFC7B4E83276 /* Pods-LawyerExamAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawyerExamAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LawyerExamAppTests/Pods-LawyerExamAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E514EE0F84655AEBDEC70CA6 /* Pods_LawyerExamAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LawyerExamAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E898AAA81A1B825A00341FD4 /* Pods-LawyerExamAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LawyerExamAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LawyerExamAppTests/Pods-LawyerExamAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -269,8 +275,8 @@
 				76875820210A54FC00324ECF /* Main.storyboard */,
 				7687585A210A5C2F00324ECF /* LoginViewController.swift */,
 				7687585F210A689B00324ECF /* EulaViewController.swift */,
-				76875861210A68F800324ECF /* SplashViewController.swift */,
-				760ECECB213EE910005B97E7 /* SignInViewController.swift */,
+				760ECECB213EE910005B97E7 /* RegistrationViewController.swift */,
+				76DBC8AE213FE09D00C9EEE7 /* MainViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 		76875853210A586A00324ECF /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				76DBC8AC213FCF2700C9EEE7 /* Settings.storyboard */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -343,6 +350,8 @@
 			children = (
 				7687585D210A651F00324ECF /* PublicProtocols.swift */,
 				76DBC8A6213F343000C9EEE7 /* KeychainManager.swift */,
+				76DBC8AA213FCE9F00C9EEE7 /* PublicEnums.swift */,
+				7612617A213FE8DC0073FE01 /* AlertMessage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -485,6 +494,7 @@
 				7687582A210A54FD00324ECF /* LaunchScreen.storyboard in Resources */,
 				7639923D210B7CE700C4042F /* HockeySDKResources.bundle in Resources */,
 				760ECECE213EE956005B97E7 /* Quiz.storyboard in Resources */,
+				76DBC8AD213FCF2700C9EEE7 /* Settings.storyboard in Resources */,
 				76DBC8A1213F226500C9EEE7 /* wrongAnswerSound.mp3 in Resources */,
 				76DBC89F213F225C00C9EEE7 /* correctAnswerSound.mp3 in Resources */,
 				76875827210A54FD00324ECF /* Assets.xcassets in Resources */,
@@ -602,16 +612,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				760ECED5213EF942005B97E7 /* CategoryViewController.swift in Sources */,
-				760ECECC213EE910005B97E7 /* SignInViewController.swift in Sources */,
+				760ECECC213EE910005B97E7 /* RegistrationViewController.swift in Sources */,
+				7612617B213FE8DC0073FE01 /* AlertMessage.swift in Sources */,
 				7687585E210A651F00324ECF /* PublicProtocols.swift in Sources */,
 				7687585B210A5C2F00324ECF /* LoginViewController.swift in Sources */,
 				760ECEDC213F1C64005B97E7 /* Parser.swift in Sources */,
 				76875860210A689B00324ECF /* EulaViewController.swift in Sources */,
 				760ECED1213EECF4005B97E7 /* MainQuizViewController.swift in Sources */,
+				76DBC8AF213FE09D00C9EEE7 /* MainViewController.swift in Sources */,
+				76DBC8AB213FCE9F00C9EEE7 /* PublicEnums.swift in Sources */,
 				76DBC8A7213F343000C9EEE7 /* KeychainManager.swift in Sources */,
 				760ECEDA213F1BD1005B97E7 /* Database.swift in Sources */,
 				760ECED3213EF918005B97E7 /* QuestionsViewController.swift in Sources */,
-				76875862210A68F800324ECF /* SplashViewController.swift in Sources */,
 				76DBC8A5213F335900C9EEE7 /* Extensions.swift in Sources */,
 				7687581D210A54FC00324ECF /* AppDelegate.swift in Sources */,
 				760ECED8213F18BB005B97E7 /* Question.swift in Sources */,
